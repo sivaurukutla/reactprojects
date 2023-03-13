@@ -1,23 +1,52 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Child from './Clild';
 
 function App() {
+  const products=[
+    { "id":36,
+    "img":"../mi/mii.jpg",
+    "tittle":"bluetooth",
+    "desc":"a bluetooth for realmi ",
+    "price":2000
+  },
+    {
+      "id":37,
+      "img":"../mi/mii.jpg",
+    "tittle":"bluetooth",
+    "desc":"a bluetooth for realmi ",
+    "price":2000
+    },
+    {
+      "id":38,
+      "img":"../mi/mii.jpg",
+    "tittle":"bluetooth",
+    "desc":"a bluetooth for realmi ",
+    "price":2000
+    },]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <div >
+         {
+          products.map((p)=>{
+            return(
+              <div key={p.id} >
+
+              <img src={p.img} alt={p.tittle}></img>
+              
+              <h1>{p.tittle}</h1>
+              <h3>{p.desc}</h3>
+            <h2>{p.price}</h2>
+            <input type='button' value="BUY"></input>
+            <s >20000</s>
+            <h3 >15000</h3>
+            
+            
+            
+            </div>
+          )})
+         }
+                     <Child prnds={products}></Child>
+
     </div>
   );
 }
