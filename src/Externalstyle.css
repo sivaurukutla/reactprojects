@@ -1,0 +1,11 @@
+
+
+.stylesheet{
+    color: aqua;
+    text-decoration: overline;
+    text-transform: inherit;
+    text-decoration-color: brown;
+}
+.childdiv{
+border-image: red;
+}

@@ -3,11 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap/';
 import {Card, CardImg} from 'react-bootstrap';
 import Listdemo from './Listdemo';
-
+import './Externalstyle.css';
 function Child(props) {
     const products=props.prnds
     return ( 
-        <div>
+        <div >
             
         {
             products.map((p)=>{
@@ -20,6 +20,7 @@ function Child(props) {
                         <Card.Footer>{p.price}</Card.Footer>
                     </Card.Body>
                 </Card>
+            
             
                 )
             })       
